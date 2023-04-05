@@ -1,0 +1,14 @@
+prefix=/Users/lijie/workspace/android_ffmpeg_so/ffmpeg-4.2.2/android-build
+exec_prefix=${prefix}
+libdir=/Users/lijie/workspace/android_ffmpeg_so/ffmpeg-4.2.2/android-build/libs/x86_64
+includedir=/Users/lijie/workspace/android_ffmpeg_so/ffmpeg-4.2.2/android-build/includes/x86_64
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 58.29.100
+Requires: 
+Requires.private: libavcodec >= 58.54.100, libswresample >= 3.5.100, libavutil >= 56.31.100
+Conflicts:
+Libs: -L${libdir}  -lavformat 
+Libs.private: -lm -lz
+Cflags: -I${includedir}

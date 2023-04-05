@@ -1,0 +1,14 @@
+prefix=/Users/lijie/workspace/android_ffmpeg_so/ffmpeg-4.2.2/android-build
+exec_prefix=${prefix}
+libdir=/Users/lijie/workspace/android_ffmpeg_so/ffmpeg-4.2.2/android-build/libs/x86_64
+includedir=/Users/lijie/workspace/android_ffmpeg_so/ffmpeg-4.2.2/android-build/includes/x86_64
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 5.5.100
+Requires: 
+Requires.private: libavutil >= 56.31.100
+Conflicts:
+Libs: -L${libdir}  -lswscale 
+Libs.private: -lm
+Cflags: -I${includedir}
